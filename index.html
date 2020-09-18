@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/bootstrap-5.0.0-alpha1-dist/css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <main id="test" class="bg-dark pt-2 pb-2 mt-4 ">
+        <h5 class="text-center text-danger" style="font-family:Jokerman ;">
+         Basic-CALCULATOR  <i class="fas fa-calculator"></i>
+        </h5>
+       <div class="text-center mt-3">
+        <input type="text" v-model="values">
+       </div>
+        <div class="text-center">
+            <button v-on:click="btn(1)" class="btn-danger btn">1</button>
+            <button v-on:click="btn(2)" class="btn-danger btn">2</button>
+            <button v-on:click="btn(3)" class="btn-danger btn">3</button>
+            <button v-on:click="btn(4)" class="btn-danger btn">4</button>
+            <button style="background-color: chartreuse; border: chartreuse;" v-on:click="btn('+')" class="btn-danger btn">+</button>
+            <br>
+            <button v-on:click="btn(5)" class="btn-danger btn">5</button>
+            <button v-on:click="btn(6)" class="btn-danger btn">6</button>
+            <button v-on:click="btn(7)" class="btn-danger btn">7</button>
+            <button v-on:click="btn(8)" class="btn-danger btn">8</button>
+            <button style="background-color: chartreuse; border: chartreuse;" v-on:click="btn('-')" class="btn-danger btn">-</button>
+            <br>
+            
+            <button v-on:click="btn(9)" class="btn-danger btn">9</button>
+            <button v-on:click="btn(0)" class="btn-danger btn">0</button>
+            <button  style="background-color: chartreuse; border: chartreuse;" v-on:click="cancel" class="btn-danger btn">C</button>
+            <button style="background-color: chartreuse; border: chartreuse;" v-on:click="btn('*')" class="btn-danger btn">*</button>
+            <button style="background-color: chartreuse; border: chartreuse;" v-on:click="btn('/')" class="btn-danger btn">/</button>
+            <br>
+            <button id="eq" style="background-color: chartreuse; border: chartreuse;" v-on:click="equal('=')" class="btn-danger btn">=</button>
+            
+        </div>
+    </main>
+    
+    <script src="/bootstrap-5.0.0-alpha1-dist/js/bootstrap.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
